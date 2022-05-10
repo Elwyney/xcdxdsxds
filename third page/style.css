@@ -1,0 +1,82 @@
+.fontArsenal {
+    font-family: 'Arsenal';
+    font-weight: 400;
+}
+
+.FontJust {
+    font-family: 'Just';
+    font-weight: 400;
+}
+
+.fontInter {
+    font-family: 'Inter';
+}
+
+.block {
+    height: 100vh;
+    background: black;
+}
+/* header */ 
+    .line {
+        background-color: black;
+    }
+    nav a {
+        color: black;
+    }
+/* header */
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-picture {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.portfolio-picture::after {
+    content: "";
+    width: 100%;
+    height:420px;
+    position: absolute;
+    background: rgba(39, 20, 14, 0.35);
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.portfolio-picture  span {
+    position: absolute;
+    z-index: 2;
+    font-size: 36px;
+    color: white;
+    margin: 184px 153px;
+}
+main .portfolio-picture:nth-child(even) span {
+    text-align: start;
+    left: 0;
+}
+ main .portfolio-picture:nth-child(odd) span {
+    text-align: end;
+    right: 0;
+}
+.btn-price {
+    margin-top: 128px;
+}
+.btn-price a {
+    background: #27140E;
+    text-decoration: none;
+    color: white;
+    padding: 19px 53px;
+    display: block;
+    border-radius: 27px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 124px 0 38px 0;
+    gap: 32px;
+}

@@ -1,0 +1,456 @@
+/* font */
+.fontArsenal {
+    font-family: 'Arsenal';
+    font-weight: 400;
+}
+
+.FontJust {
+    font-family: 'Just';
+    font-weight: 400;
+}
+
+.fontInter {
+    font-family: 'Inter';
+}
+
+body {
+    background-color: #27140E;
+}
+
+main>span:nth-child(1) {
+    font-size: 32px;
+    text-align: center;
+    display: block;
+    margin: 139px 0 105px 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cards:nth-child(3) {
+    margin: 130px 0;
+}
+
+.cardBox {
+    width: 326px;
+    height: 432px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 61px;
+}
+
+.cardBox::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+}
+
+.slider {
+    width: 502px;
+    position: absolute;
+    z-index: 3;
+}
+
+
+.cardTop::before {
+    background-image: url('../img/Rectangle 172.png');
+}
+
+.cardCenter::before {
+    background-image: url('../img/Rectangle 174.png');
+}
+
+.cardBottom::before {
+    background-image: url('../img/Rectangle 177.png');
+}
+
+.cardBox::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #E9D6BA;
+    bottom: -19px;
+}
+
+.cardTop::after,
+.cardBottom::after {
+    right: 0;
+}
+
+.cardCenter::after {
+    left: 0;
+}
+
+.cardBox img {
+    width: 241px;
+    height: 356px;
+    z-index: 1;
+}
+
+.titleCard span,
+a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.titleCard span {
+    font-size: 67px;
+    display: block;
+    margin-bottom: 29px;
+    font-family: 'Arsenal';
+}
+
+
+
+.titleCard a {
+    padding: 17px 46px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 24px;
+    transition: .3s;
+    color: white;
+    font-family: 'Just';
+}
+
+.cards a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* cards */
+/* cardModalWin */
+.hide {
+    display: none;
+}
+
+.servicesCard {
+    width: 502px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.servicesCard-title {
+    padding: 22px 0;
+    text-align: center;
+    color: white;
+    background: #27140e;
+    font-size: 36px;
+    border: 1px solid white;
+    position: relative;
+    font-family: 'Arsenal';
+}
+
+.lineTitle,
+.servicesCard-showBlock {
+    background-color: black;
+}
+
+.servicesCard,
+.servicesCard-showBlock::before,
+.servicesCard-showBlock::after {
+    background-color: white;
+}
+
+.servicesCard-appellation span,
+.padd-i78 {
+    font-size: 32px;
+}
+
+.servicesCard-appellation {
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    margin: 34px 0;
+}
+
+.lineTitle {
+    width: 100%;
+    height: 1px;
+    margin: 0 20px;
+}
+
+.servicesCard-title,
+.servicesCard-appellation span,
+.servicesCard_bloсk_block,
+.ui-f1d3,
+.lineTitle {
+    display: block;
+}
+
+.price {
+    white-space: nowrap;
+}
+
+.servicesCard_bloсk {
+    padding: 0 32px 34px 32px;
+}
+
+.padd-i78 {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.servicesCard_bloсk_block {
+    margin: 25px 0;
+}
+
+.ui-f1d3 {
+    font-size: 22px;
+    margin-left: 20px;
+    margin: 0 20px;
+}
+
+.servicesCard_bloсk_block ul {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.servicesCard-btn {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.servicesCard-btn img {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+}
+
+.plus {
+    display: flex;
+}
+
+.servicesCard-showBlock {
+    display: flex;
+    align-items: center;
+}
+
+.servicesCard-showBlock {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.btnModalHide,
+.hideCallBack {
+    position: absolute;
+    background-color: rgb(255 160 0);
+    /* display: block; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    /* left: 122%; */
+    transform: rotate(45deg);
+    top: -17.5px;
+    cursor: pointer;
+    right: -16px;
+    z-index: 11;
+}
+
+.sliderBy {
+    width: 502px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+
+.servicesCard-showBlock::before,
+.servicesCard-showBlock::after,
+.btnModalHide::before,
+.btnModalHide::after,
+.hideCallBack::before,
+.hideCallBack::after {
+    content: "";
+    height: 2px;
+    width: 15px;
+    z-index: 1;
+    position: absolute;
+    transition: 0.7s;
+    background-color: white;
+}
+
+.servicesCard-showBlock::after,
+.btnModalHide::before,
+.hideCallBack::before {
+    transform: rotate(90deg);
+}
+
+.showList {
+    max-height: 0;
+    overflow: hidden;
+}
+
+/*  */
+
+.servicesCard_bloсk:nth-child(2) {
+    padding: 0 32px 32px 32px;
+}
+
+.servicesCard_bloсk:nth-child(2) span {
+    padding: 0px 15px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin: 63px 0;
+    font-family: 'Just';
+}
+
+.servicesCard_bloсk:nth-child(2) span:first-child {
+    margin: 42px 0 0 0;
+}
+
+.servicesCard_bloсk:nth-child(2) span:nth-child(odd) {
+    border-left: 2px solid #27140e;
+}
+
+.servicesCard_bloсk:nth-child(2) span:nth-child(even) {
+    border-left: 2px solid #e9d6ba;
+}
+
+/* animation */
+.active::after {
+    transform: rotate(0deg);
+    filter: blur(5px) opacity(0);
+}
+
+/* cardModalWin */
+
+
+.callback-btn {
+    display: flex;
+    justify-content: center;
+    margin: 146px 0 0 0;
+}
+
+.callback-btn a {
+    margin-top: 177px;
+    padding: 15px 30px;
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 185px 0 90px 0;
+    gap: 33px;
+}
+
+/* form */
+.callback {
+    display: none;
+}
+form {
+    z-index: 1;
+    display: inline-block;
+    background: black;
+    width: 551px;
+    display: flex;
+    flex-direction: column;
+    padding: 63px 56px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-radius: 10px;
+}
+.titleForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+.titleForm label:nth-child(1) {
+    font-size: 32px;
+}
+.titleForm label:nth-child(2),
+.col3 {
+    font-size: 24px;
+}
+.typeCallBack label {
+    font-size: 20px;
+}
+
+form>div:nth-child(1) {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 71px;
+}
+
+label {
+    color: white;
+}
+
+
+.col3 {
+    padding: 35px 0px 20px 0;
+}
+
+input {
+    outline: none;
+}
+
+input[type="text"] {
+    background: none;
+    /* margin: 10px 0; */
+    padding: 35px 0px 20px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+input[type="button"] {
+    width: 147px;
+    margin: 0 auto;
+    border: none;
+    padding:12px 33px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.typeCallBack {
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+}
+
+.typeCallBack div {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 52px;
+    align-items: center;
+    gap: 7px;
+}

@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1164px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+/* slider */
+.header {
+    z-index: 3;
+    display: flex;
+}
+
+.logo {
+    padding: 44px 0 10px 0px;
+    width: 104px;
+    height: 104px;
+}
+
+.imgHeader {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.imgHeader img {
+    display: block;
+}
+
+.btnLink {
+    display: none;
+}
+
+/* burger */
+.burgerLine {
+    padding: 70px 0 58px 0px;
+    margin-left: 100px;
+    display: none;
+}
+
+.cursorClick {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cursorClick span,
+.cursorClick span::before,
+.cursorClick span::after {
+    content: "";
+    display: block;
+    width: 43px;
+    height: 1px;
+    background-color: black;
+    transition: .3s;
+}
+
+.cursorClick span::before {
+    transform: translate(0px, 10px);
+}
+
+.cursorClick span::after {
+    transform: translate(0px, -10px);
+}
+
+.clik span {
+    transform: rotate(45deg);
+}
+
+.clik span::after {
+    transform: rotate(90deg);
+}
+
+.clik span::before {
+    transform: rotate(90deg);
+}
+
+/* burger */
+.line-header {
+    width: 100%;
+    padding: 82px 0 70px 0px;
+    margin: 0 34px 0 11px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 38px;
+}
+
+nav a {
+    font-size: 20px;
+    display: block;
+    color: white;
+}
+
+.project-work {
+    overflow: hidden;
+    max-height: 0;
+    transition: 2s;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+    z-index: 3;
+}
+
+.navigation-button:hover .project-work {
+    max-height: 100vh;
+}
+
+nav a,
+.navigation-button a {
+    display: block;
+    padding: 70px 0 58px 0px;
+}
+
+.workLevel {
+    display: flex;
+    position: relative;
+}
+
+.workLevel img {
+    width: 218px;
+    height: 292px;
+    object-fit: cover;
+}
+
+.textBoxLevel {
+    padding: 29px 93px 0 29px;
+}
+
+.textBoxLevel span:nth-child(1) {
+    width: 252px;
+    display: block;
+    border-bottom: 1px solid;
+    padding: 0px 0 10px 0;
+    font-size: 20px;
+}
+
+.textBoxLevel span:nth-child(2) {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.35);
+    margin-top: 6px;
+    display: block;
+}
+
+/* header */
+
+
+/* mobile version */
+/* header */
+@media (max-width:750px) {
+    .burgerLine {
+        display: block;
+        margin: 0;
+    }
+
+
+    nav {
+        display: block;
+        color: black;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        background: yellowgreen;
+        top: 120px;
+        transition: .7s;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    header {
+        background: yellowgreen;
+    }
+
+    .hide {
+        max-height: 100vh;
+    }
+
+    nav a,
+    .navigation-button a {
+        color: white;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .burgerLine {
+        margin: 0 25px 0 0;
+    }
+
+    .btnLink {
+        display: block;
+        font-size: 25px;
+        font-family: 'Inter';
+        border-top: 1px solid;
+    }
+
+    .btnLink a {
+        color: white;
+    }
+
+    nav a {
+        margin: 29px 0 10px 97px;
+    }
+}
+
+/* header */
