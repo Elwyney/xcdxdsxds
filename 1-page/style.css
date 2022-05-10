@@ -196,6 +196,7 @@ button:hover {
     top: 0;
     font-size: 360px;
     opacity: 4%;
+    filter: blur(3px);
 }
 
 /* second section */
